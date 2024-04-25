@@ -1,0 +1,40 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    printf("Enter seat Number:");
+    scanf("%d",&n);
+    if(n<=72)
+    {
+    switch(n%8)
+    {
+        case 0:
+        printf("side upper");
+        break;
+        case 7:
+        printf("side lower");
+        break;
+        case 3:
+        case 6:
+        printf("Upper");
+        break;
+        case 2:
+        case 5:
+        printf("Middle");
+        break;
+        case 1:
+        case 4:
+        printf("Lower");
+        break;
+        default:
+        printf("Invalid Seat Number");
+    
+    }
+    }
+    else
+    printf("Not a valid Seat number");
+    
+    return 0;
+}
